@@ -1,34 +1,54 @@
-import React from "react";
+// src/App.tsx
+import React from "react"
 
 function App() {
   return (
-    <div style={{ fontFamily: "Arial, sans-serif" }}>
-      <section style={{
-        backgroundColor: "#004085",
-        color: "white",
-        padding: "4rem 2rem",
-        textAlign: "center"
-      }}>
-        <h1 style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>
-          Welcome to Kwakhanya Drivers Training
-        </h1>
-        <p style={{ fontSize: "1.2rem", marginBottom: "2rem" }}>
-          Book your driving lessons quickly and easily online.
+    <main className="flex flex-col items-center justify-center min-h-screen bg-white px-4">
+      <header className="w-full py-4">
+        <h1 className="text-center text-2xl font-bold text-blue-600">Kwakhanya Drivers Training</h1>
+      </header>
+
+      <div className="text-center mt-4">
+        <h2 className="text-3xl font-bold">Kwakhanya Drivers Training</h2>
+        <p className="text-gray-600 mt-2">
+          South Africa's Premier Driving School Booking Platform
         </p>
-        <button style={{
-          backgroundColor: "#ffc107",
-          color: "#004085",
-          border: "none",
-          padding: "1rem 2rem",
-          fontSize: "1.1rem",
-          cursor: "pointer",
-          borderRadius: "0.5rem"
-        }}>
-          Book Now
+
+        <button className="mt-6 px-4 py-2 border border-blue-500 text-blue-500 rounded hover:bg-blue-50">
+          🌐 Get Help
         </button>
-      </section>
-    </div>
-  );
+      </div>
+
+      <form className="mt-10 w-full max-w-md bg-white shadow-md rounded px-6 py-6 space-y-4">
+        <div>
+          <label className="block text-gray-700 text-sm font-medium mb-2">
+            Location
+          </label>
+          <input
+            type="text"
+            placeholder="Enter your city or area"
+            className="w-full px-4 py-2 border rounded"
+          />
+        </div>
+
+        <div>
+          <label className="block text-gray-700 text-sm font-medium mb-2">
+            Service Requesting
+          </label>
+          <select className="w-full px-4 py-2 border rounded">
+            <option>Select service type</option>
+          </select>
+        </div>
+
+        <button
+          type="submit"
+          className="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+        >
+          Find Driving Schools
+        </button>
+      </form>
+    </main>
+  )
 }
 
-export default App;
+export default App
