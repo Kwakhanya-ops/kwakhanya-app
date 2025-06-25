@@ -1,0 +1,72 @@
+.auth-container {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #004080;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  background: #eee;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  background: #004080;
+  color: white;
+}
+
+.auth-form {
+  text-align: left;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.auth-form input,
+.auth-form select {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  margin-top: 0.3rem;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #FFD700;
+  border: none;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #e6c200;
+}
